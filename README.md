@@ -1,8 +1,6 @@
 # FilePreviews.io (Ruby client)
 [![Gem Version](https://badge.fury.io/rb/filepreviews.svg)](https://badge.fury.io/rb/filepreviews)
 [![Build Status](https://travis-ci.org/jonahoffline/filepreviews-ruby.svg?branch=master)](https://travis-ci.org/jonahoffline/filepreviews-ruby)
-[![Dependency Status](https://gemnasium.com/badges/github.com/jonahoffline/filepreviews-ruby.svg)](https://gemnasium.com/github.com/jonahoffline/filepreviews-ruby)
-[![security](https://hakiri.io/github/jonahoffline/filepreviews-ruby/master.svg)](https://hakiri.io/github/jonahoffline/filepreviews-ruby/master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/da1cc5ca8fbbbf1ae3a9/maintainability)](https://codeclimate.com/github/jonahoffline/filepreviews-ruby/maintainability)
 [![Inline docs](http://inch-ci.org/github/jonahoffline/filepreviews-ruby.png)](http://inch-ci.org/github/jonahoffline/filepreviews-ruby)
 
@@ -13,6 +11,10 @@ Ruby client library and CLI tool for the [FilePreviews.io](http://filepreviews.i
 Add this line to your application's Gemfile:
 
     gem 'filepreviews'
+
+Or via GitHub Package Manager:
+
+    gem 'filepreviews', source: 'https://rubygems.pkg.github.com/jonahoffline'
 
 And then execute:
 
@@ -43,7 +45,7 @@ Simpler style:
 require 'filepreviews'
 
 Filepreviews.api_key = 'YOUR_API_KEY'
-Filepreviews.config.secret_key = 'YOUR_SECRET_KEY'
+Filepreviews.secret_key = 'YOUR_SECRET_KEY'
 ```
 
 ### Basic Example Code
@@ -97,7 +99,10 @@ conf = {
     },
 
     # supported: '1', '1-3', '1,3,5', '1-3', 'all'
-    pages: '1-3'
+    pages: '1-3',
+
+    # Callback URL (POST) to send results
+    callback_url: 'http://requestbin.fullcontact.com/1234'
   }
 }
 
