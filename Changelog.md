@@ -1,5 +1,31 @@
 # Filepreviews Changelog
 
+## 2.0.9
+
+Released Sept 6, 2020 ([2.0.9](https://github.com/jonahoffline/filepreviews-ruby/tree/v2.0.9)).
+
+* Update `Faraday` dependency
+
+## 2.0.8
+
+Released June 24, 2020 ([2.0.8](https://github.com/jonahoffline/filepreviews-ruby/tree/v2.0.8)).
+
+* Ruby 2.7 compatibility (thanks to [MartinodF](https://github.com/MartinodF))
+* Update Travis to include additional Ruby versions (2.6.6, 2.5.8, 2.4.10, truffleruby)
+* Update gemspec to require Ruby version >= 2.4
+
+## 2.0.7
+
+Released Sept 24, 2019 ([2.0.7](https://github.com/jonahoffline/filepreviews-ruby/tree/v2.0.7)).
+
+* Add GitHub Package Registry support
+
+## 2.0.6
+
+Released May 19, 2019 ([2.0.6](https://github.com/jonahoffline/filepreviews-ruby/tree/v2.0.6)).
+
+* Add `callback_url` option (thanks to [patrick-gleeson](https://github.com/patrick-gleeson))
+
 ## 2.0.5
 
 Released May 4, 2018 ([2.0.5](https://github.com/jonahoffline/filepreviews-ruby/tree/v2.0.5)).
